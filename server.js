@@ -88,7 +88,7 @@ app.post('/support/contact', contactLimiter, async (req, res) => {
     res.json({ ok: true });
   } catch (err) {
     console.error('Failed to send support email:', err.message);
-    res.status(500).json({ error: 'Failed to send message. Please email support@frankfor.you directly.' });
+    res.status(500).json({ error: 'Failed to send message. Please email frank@agentmail.to directly.' });
   }
 });
 
